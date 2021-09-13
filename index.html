@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <header>
+    <title>JavaScript Sandbox</title>
+    <!-- Add linked files below, such as CSS and JS files -->
+
+    <!-- Links this html document to the style.css file -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Adds jquery to website -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Links index.js file to this html file -->
+    <script src="index.js" type="text/javascript"></script>
+  </header>
+
+  <body>
+    <p id="main-header">Welcome to your JavaScript sandbox!</p>
+
+    <p class="section-header">
+      This button triggers a browser alert, click it to see the alert!
+    </p>
+    <!-- When this button is clicked, the showAlert() function is index.js is called -->
+    <button type="button" onclick="showAlert()">Show alert!</button>
+
+    <br /><br />
+
+    <p class="section-header">
+      This is a form, enter you name and select your favorite food, then hit
+      submit!
+    </p>
+    <form id="form">
+      <!-- Creates text input for user to enter their first name -->
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" /><br />
+
+      <!-- Creates radio form for user to select their favorite food -->
+      <label
+        ><input
+          type="radio"
+          id="pizza"
+          name="fav_food"
+          value="pizza" />Pizza<br
+      /></label>
+      <label
+        ><input
+          type="radio"
+          id="sushi"
+          name="fav_food"
+          value="sushi" />Sushi<br
+      /></label>
+      <label
+        ><input
+          type="radio"
+          id="tacos"
+          name="fav_food"
+          value="tacos" />Tacos<br
+      /></label>
+
+      <!-- 
+          This button uses jQuery for its function
+          Look at index.js for the line that starts with "$("#formSubmit").click"
+      -->
+      <p>Click submit form to view an alert</p>
+      <button id="formSubmit" type="button">Submit form</button>
+    </form>
+  </body>
+</html>
