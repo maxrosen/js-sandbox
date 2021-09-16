@@ -21,7 +21,7 @@ $(document).ready(function () {
 
     // The browser displays an alert using string interpolation
     // String interpolation allows strings to be created using JS variables
-    // These strings are placed inside tick marks (`) instaed of quote marks
+    // These strings are placed inside tick marks (``) instead of quote marks ('')
     // To use a variable simple use the form of ${variable_name} inside the ticks
     alert(`${fname}'s favorite food is ${food}`);
   });
